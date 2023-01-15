@@ -31,12 +31,14 @@ $(function(){
 		})
 	});
 	
-	$('.bxslider.auto-bx').bxSlider({
-		auto: true,
-	});
-	$('.bxslider.bx-vertical').bxSlider({
-		auto: true,
-		mode: 'vertical',
-		pager: false,
-	});
+	if($(".bxslider").length > 0){
+		$('.bxslider.auto-bx').bxSlider({
+			auto: true,
+		});
+		$('.bxslider.bx-vertical').bxSlider({
+			auto: true,
+			mode: 'vertical',
+			pager: false,
+		});
+	}
 });
