@@ -1,0 +1,172 @@
+/*-----[section]banner*/
+.banner{
+    width: 100%;
+}
+
+/*-----[section]shortcut_icon*/
+.shortcut_icon{
+    width: 1024px;
+    height: 200px;
+    margin: 0 auto;
+}
+.shortcut_icon a{
+    float: left;
+}
+.icon_wrap{
+    width: 256px;
+    height: 150px;
+    margin: 25px 0;
+    border-right: 2px solid #969696;
+    box-sizing: border-box;
+}
+.ask>.icon_wrap{
+    border: 0;
+}
+.icon_wrap div{
+    margin: 0 65.5px;
+    margin-bottom: 22.25px;
+}
+.icon_wrap p:nth-child(2){
+    font-size: 14px;
+    font-weight: bold;
+}
+.icon_wrap p:nth-child(3){
+    font-size: 12px;
+}
+.image01{
+    width: 125px;
+    height: 93.75px;
+    background-image: url(../images/Menu_Btn.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.image02{
+    width: 125px;
+    height: 93.75px;
+    background-image: url(../images/Menu_Btn.png);
+    background-position: -125px 0;
+    background-repeat: no-repeat;
+}
+.image03{
+    width: 125px;
+    height: 93.75px;
+    background-image: url(../images/Menu_Btn.png);
+    background-position: -250px 0;
+    background-repeat: no-repeat;
+}
+.image04{
+    width: 125px;
+    height: 93.75px;
+    background-image: url(../images/Menu_Btn.png);
+    background-position: -375px 0;
+    background-repeat: no-repeat;
+}
+
+/*-----[section]notice*/
+.notice{
+    width: 1024px;
+    height: 45px;
+    margin: 10px auto;
+    position: relative;
+    background-color: #404040;
+}
+.notice_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 342.5px;
+    height: 45px;
+    background-color: #3ba3ba;
+    border-radius: 0 22.5px 22.5px 0;
+}
+.notice_left a{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0 0 150px;
+}
+.notice_right{
+    width: 640px;
+    position: absolute;
+    left: 360px;
+    text-align: left;
+    padding: 12px 0;
+    overflow: hidden;
+}
+.notice_right a{
+    color: white;
+    font-size: 16px;
+}
+
+/*-----[section]shortcut_box*/
+.shortcut_box{
+    width: 1024px;
+    height: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+.shortcut_box a{
+    display: block;
+    color: white;
+}
+.box1{
+    width: 504px;
+    height: 360px;
+}
+.about_sejong{
+    width: 504px;
+    height: 175px;
+    background-image: url(../images/main_01.png);
+    margin-bottom: 10px;
+}
+.about_teachers{
+    width: 504px;
+    height: 175px;
+    background-image: url(../images/teachers_ai.png);
+}
+.about_bnt{
+    width: 510px;
+    height: 360px;
+    background-image: url(../images/main_02.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shortcut_box a div:first-child{
+    font-size: 14px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+}
+.shortcut_box a div:last-child{
+    font-size: 36px;
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 0 20px;
+}
+.about_sejong div:last-child{
+    top: 61.5px;
+    left: 110.5px;
+}
+.about_teachers div:first-child{
+    position: absolute;
+    left: 345px;
+}
+.about_teachers div:last-child{
+    top: 222.5px;
+    left: 303px;
+    text-align: right;
+}
+.about_bnt div:last-child{
+    top: 130px;
+    left: 137px;
+}
+.about_bnt div:last-child p{
+    float: left;
+}
+.bnt{
+    color: #3ba3ba;
+    text-shadow: 0 0 10px #000;
+}

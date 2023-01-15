@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>세종어학원</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.depth02').hide();
+            $('.main_nav').click(function(){
+                $('.depth02').slideToggle();
+            });
+            
+            $('.Do').click(function(){
+                var boxOffset = $('.S_download').offset().top-150;
+                
+                $('html,body').animate({
+                    scrollTop:boxOffset
+                })
+            })
+            $('.In').click(function(){
+                var boxOffset = $('.S_install').offset().top-150;
+                
+                $('html,body').animate({
+                    scrollTop:boxOffset
+                })
+            })
+            $('.Ac').click(function(){
+                var boxOffset = $('.S_Account').offset().top-150;
+                
+                $('html,body').animate({
+                    scrollTop:boxOffset
+                })
+            })
+        })
+    </script>
+    <style>
+        .article div{
+            margin: 40px auto;
+        }
+        
+        .Info_Btn{
+            overflow: hidden;
+            margin: 0 auto;
+            width: 420px;
+        }
+        .Info_Btn div{
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #969696;
+            padding: 6px 0;
+            line-height: 15px;
+            background-color: #f2f2f2;
+            border: 1px solid #969696;
+            box-sizing: border-box;
+            cursor: pointer;
+            float: left;
+            margin: 0 20px;
+        }
+        .Info_Btn div:hover{
+            background-color: #969696;
+            color: #f2f2f2;
+        }
+        
+        .Btn{
+            overflow: hidden;
+            width: 720px;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+        .Btn a{
+            display: block;
+            width: 300px;
+            height: 70px;
+            border-radius: 100px;
+            float: left;
+            margin: 0 30px;
+            background-color: #8bc6d3;
+            color: white;
+            font-family: "a반달곰";
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 2px;
+            padding-top: 5px;
+            box-sizing: border-box;
+            position: relative;
+            transition: 0.3s;
+        }
+        .Btn a:hover{
+            font-size: 24px;
+            background-color: #3ba3ba;
+        }
+        
+        .ep div img{
+            width: 716px;
+            border: 2px solid #3ba3ba;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+            <div class="Logo_wrap">
+                <a href="http://esejong.dothome.co.kr/">
+                    <div class="top_logo"></div>
+                    <div class="top_text">세종어학원</div>
+                </a>
+            </div>
+            <div class="main_nav">
+                <ul>
+                    <li class="depth01">
+                        <ul>
+                            <li><a href="#none">학원소개</a></li>
+                            <li><a href="#none">수강안내</a></li>
+                            <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
+                            <li><a href="#none">학습지원</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth02">
+                    <div class="depth02_wrap">
+                        <ul class="academy_intro">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
+                        </ul>
+                        <ul class="class_intro">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
+                        </ul>
+                        <ul class="help">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
+                        </ul>
+                        </div></li>
+                </ul>
+            </div>
+    </header>
+    
+    <section>
+        <div class="title">
+            <div class="main_title">
+                How to install<br>
+                the SKYPE
+            </div>
+            <div class="sub_title">
+                화상영어 수업을 위한 SKYPE 설치 방법
+            </div>
+        </div>
+        <div class="article">
+            <div class="Info_Btn">
+                <div class="Do">다운로드</div>
+                <div class="In">설치 방법</div>
+                <div class="Ac">계정 만들기</div>
+            </div>
+            <div class="S_download">
+                <h1><font color="#3ba3ba">1. 다운로드</font></h1>
+                <div class="Btn">
+                    <a href="http://skype.daesung.com/download/file_down_full.asp" class="Down">프로그램<br>즉시 다운로드</a>
+                    <a href="http://software.naver.com/software/summary.nhn?softwareId=MFS_116435#" class="Go">네이버에서<br>다운로드</a>
+                </div>
+            </div>
+            <div class="S_install ep">
+                <h1><font color="#3ba3ba">2. 설치 방법</font></h1>
+                <img src="images/01.png" alt="SkypeSetupFull">
+                <div>
+                    <p>다운받아진 &#91;SkypeSetupFull&#93;을 실행시켜 줍니다.</p>
+                </div>
+                <div>
+                    <img src="images/02.png" alt="언어설정">
+                    <p>설치하기 팝업이 뜨면 언어를 선택할 수 있는 옵션이 나타납니다.<br>
+                    기본 설정인 &#91;한국어&#93;로 둔 상태에서 &#91;동의합니다-다음&#93; 버튼을 클릭합니다.<br>
+                    <font color="#969696" size="2">만일 프로그램의 설치 경로를 변경하시고 싶으신 분들은 &#91;추가 옵션&#93;을 눌러서 변경해주세요.</font></p>
+                </div>
+                <div>
+                    <img src="images/03.png" alt="체크박스해제">
+                    <p>SKYPE 설치와 관련 없는<br>
+                    &#91;Bing을 내 검색 엔진으로 설정&#93;<br>
+                    &#91;MSN을 홈페이지로 설정하기&#93;<br>
+                    체크박스를 풀어주세요.</p>
+                </div>
+                <div>
+                    <img src="images/04.png" alt="설치완료">
+                    <p>프로그램이 잘 설치되고 있습니다!<br>
+                    프로그램 설치가 완료되면 로그인을 진행해주시면 됩니다.</p>
+                </div>
+            </div>
+            <div class="S_Account ep">
+                <h1><font color="#3ba3ba">3. 계정 만들기</font></h1>
+                <div>
+                    <img src="images/05.png" alt="로그인화면">
+                    <p>가입 때 적었던 ID 혹은 E-mail 주소로 로그인 합니다.<br>
+                    계정이 아직 없으신 분들은 아래의 &#91;계정만들기&#93;를 선택해주세요.</p>
+                </div>
+                <div>
+                    <img src="images/06.png" alt="계정만들기">
+                    <p>SKYPE 가입시에는 반드시 전화번호가 없어도 괜찮습니다.<br>
+                    로그인 하실 때 전화번호가 기억하기 쉬우신 분들은 그대로 진행해주세요.<br>
+                    전화번호가 없거나 이메일로 로그인하시고 싶으신 분들은 &#91;전자 메일을 대신 사용&#93;을 눌러주세요.</p>
+                </div>
+                <div>
+                    <img src="images/07.png" alt="동의하고 계정만들기">
+                    <p>입력이 완료되었으면 &#91;동의하고 계정 만들기&#93;를 클릭해주세요.</p>
+                </div>
+                <div>
+                    <img src="images/08.png" alt="세부정보 추가">
+                    <p>성과 이름을 입력 후 다음버튼을 눌러주세요.</p>
+                </div>
+                <div>
+                    <img src="images/09.png" alt="국가 및 생년월일">
+                    <p>국가/지역은 한국을 선택 후 생년월일을 입력해주세요. </p>
+                </div>
+                <div>
+                    <img src="images/10.png" alt="코드입력">
+                    <p>입력하신 전화번호/이메일로 인증코드가 발송되었습니다.<br>
+                    받으신 코드를 입력한 후 다음단계로 진행합니다.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/11.png" alt="사운드와 영상 확인">
+                    <p>이제 두 가지 정도의 설정만 하면 사용 가능하십니다!<br>
+                    <font color="red">!스카이프를 사용하기 위해서는 기본적으로 마이크와 웹캠이 필요합니다!</font><br>
+                    근래 출시되는 대부분의 노트북에는 마이크와 카메라가 내장되어 있으니 큰 문제가 없을 것입니다.<br>
+                    계속버튼을 눌러 진행해주세요.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/12.png" alt="사운드 테스트">
+                    <p>스피커 테스트를 위해 위의 네모 박스부분을 눌러주세요.<br>
+                    소리가 제대로 들린다면 정상입니다.<br>
+                    오른쪽 카메라의 영상이 제대로 나오는지도 확인해주세요.</p>
+                </div>
+                <div>
+                    <img src="images/13.png" alt="마이크 테스트">
+                    <p>마이크 테스트를 위해 마이크에 말을 해보세요.<br>
+                    위의 그림과 같이 음성 인식바가 나타나면 정상입니다.<br>
+                    테스트가 완료되면 계속 버튼을 눌러서 다음 단계로 넘어가주세요.</p>
+                </div>
+                <div>
+                    <img src="images/14.png" alt="프로필 사진">
+                    <p>프로필 사진을 추가하는 단계입니다.<br>
+                    계속 버튼을 눌러 진행해주세요.</p>
+                </div>
+                <div>
+                    <img src="images/15.png" alt="사진선택">
+                    <p>웹캠에 자신의 얼굴이 나오도록 한 뒤 &#91;사진찍기&#93; 버튼을 눌러주세요.<br>
+                    만약 다른 이미지나 사진을 원한다면 &#91;찾아보기&#93; 버튼으로 선택해주세요.</p>
+                </div>
+                <div>
+                    <img src="images/16.png" alt="최종선택">
+                    <p>사진 선택이 완료되었다면 &#91;이 사진 이용&#93; 버튼을 누릅니다.</p>
+                </div>
+                <div>
+                    <img src="images/17.png" alt="설정완료">
+                    <p>이제 모든 설정이 마무리 되었습니다~!<br>
+                    &#91;Skype 사용 시작&#93; 버튼을 눌러 이용해주세요~</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_nav">
+            <ul>
+                <li class="depth03">
+                    <ul>
+                        <li><a href="#none">학원소개</a></li>
+                        <li><a href="#none">수강안내</a></li>
+                        <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
+                        <li><a href="#none">학습지원</a></li>
+                    </ul>
+                </li>
+                <li class="depth04">
+                <div class="depth04_wrap">
+                    <ul class="academy_intro">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
+                    </ul>
+                    <ul class="class_intro">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
+                    </ul>
+                    <ul class="help">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
+                    </ul>
+                    </div></li>
+            </ul>
+        </div>
+        <div class="footer_under">
+            <div class="footer_wrap">
+                <div class="footer_logo"></div>
+                <div class="address">
+                    Address : #27 Ascona St. village east Cainta Rizal  |  Tel : 070-8258-6747<br>
+                    Copyright (c) 2016 Hoito-Turve All Rights Reserved.
+                </div>
+                <div class="box2">
+                    <p>Account Info</p>
+                    <p>예금주 : 이은숙<br>씨티 120-06097-260-01</p>
+                </div>
+                <div class="box2">
+                    <p>Contact</p>
+                    <p>KAKAO ID : oainee9898<br>SKYPE ID : sejong0710</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

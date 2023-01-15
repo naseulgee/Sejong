@@ -1,0 +1,27 @@
+.article div:not([class^="bx-"]){
+    margin: 40px auto;
+}
+.article .Info_Btn{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 420px;
+}
+.article .Info_Btn div{
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #969696;
+    padding: 6px 0;
+    line-height: 15px;
+    background-color: #f2f2f2;
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    margin: 0 20px;
+}
+.article .Info_Btn div:hover{
+    background-color: #969696;
+    color: #f2f2f2;
+}

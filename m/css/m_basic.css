@@ -1,0 +1,273 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+ul li{list-style: none;}
+@media screen and (min-width:320px) and (max-width:480px){
+    @font-face{
+                /*@font-face는 선택자가 아님. 나중에 폰트패밀리에 사용할 수 있도록 업로드 선언.*/
+                font-family: "a반달곰";
+                src:url(font/a반달곰.eot) format('embeded-opentype'),
+                    url(font/a반달곰.woff) format('woff');
+            }
+    body,a,p,h1,h2,h3,h4,h5,h6{
+        font-family: sans-serif,"Arial";
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /*-----[header]*/
+    header{
+        width: 100%;
+        height: 145px;
+        position: fixed;
+        background-color: white;
+        z-index: 99;
+    }
+    .top_logo{
+        width: 116px;
+        height: 51px;
+        margin: 47px 0 0 20px;
+        background-image: url(../../images/Logo.png);
+    }
+    
+    /*-----[header]Btn*/
+    .main_Btn{
+        width: 84px;
+        height: 84px;
+        border-radius: 15px;
+        background-color: #3ba3ba;
+        position: absolute;
+        top: 30.5px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .Btn_img{
+        width: 55px;
+        height: 41px;
+        background-image: url(../../images/Menu_Btn.png);
+        background-position: 821px -21px;
+        margin: 21.5px 14.5px;
+        transition: 0.5s;
+    }
+    .Btn_img.on{
+        background-position: 738px -21px;
+    }
+
+    /*-----[header]nav*/
+    .main_nav{
+        width: 100%;
+        height: 1000px;
+        position: fixed;
+        top: 145px;
+        right: -100%;
+        background-color: #3ba3ba;
+        transition: 0.5s;
+    }
+    .main_nav.on{
+        right: 0;
+    }
+    .main_nav a{
+        color: white;
+        display: block;
+    }
+    .depth01>li>a{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .depth01>li{
+        border-bottom: 2px solid #fff;
+    }
+    .depth02{
+        display: none;
+    }
+    .depth02>li{
+        border-top: 2px dotted #fff;
+    }
+    .depth02>li>a{
+        padding: 5px 0;
+    }
+
+
+    /*-----[section]*/
+    section{
+        padding-top: 145px;
+    }
+    /*-----[section]banner*/
+    .banner{
+        width: 100%;
+        height: 350px;
+        background-color: #f2f2f2;
+    }
+
+    /*-----[section]shortcut_icon*/
+    .shortcut_icon{
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .shortcut_icon a{
+        float: left;
+    }
+    .icon_wrap{
+        width: 50%;
+        height: 200px;
+        position: relative;
+        border: 1px solid #f2f2f2;
+        box-sizing: border-box;
+    }
+    .icon_wrap div{
+        position: absolute;
+        left: 50%;
+        margin: 25px 0 0 -62.5px;
+        margin-bottom: 22.25px;
+    }
+    .icon_wrap p:nth-child(2){
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 135px;
+    }
+    .icon_wrap p:nth-child(3){
+        font-size: 12px;
+    }
+    .image01{
+        width: 125px;
+        height: 93.75px;
+        background-image: url(../../images/Menu_Btn.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+    .image02{
+        width: 125px;
+        height: 93.75px;
+        background-image: url(../../images/Menu_Btn.png);
+        background-position: -125px 0;
+        background-repeat: no-repeat;
+    }
+    .image03{
+        width: 125px;
+        height: 93.75px;
+        background-image: url(../../images/Menu_Btn.png);
+        background-position: -250px 0;
+        background-repeat: no-repeat;
+    }
+    .image04{
+        width: 125px;
+        height: 93.75px;
+        background-image: url(../../images/Menu_Btn.png);
+        background-position: -375px 0;
+        background-repeat: no-repeat;
+    }
+
+    /*-----[section]notice*/
+    .notice{
+        width: 100%;
+        height: 45px;
+        position: relative;
+        background-color: #404040;
+    }
+    .notice_left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 30%;
+        height: 45px;
+        background-color: #3ba3ba;
+        border-radius: 0 22.5px 22.5px 0;
+    }
+    .notice_left a{
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding: 10px 0;
+    }
+    .notice_right{
+        width: 60%;
+        position: absolute;
+        left: 33%;
+        text-align: left;
+        padding: 12px 0;
+        overflow: hidden;
+    }
+    .notice_right a{
+        color: white;
+        font-size: 16px;
+    }
+
+    /*-----[section]shortcut_box*/
+    .shortcut_box{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .shortcut_box a{
+        display: block;
+        color: white;
+        position: relative;
+    }
+    .shortcut_box img{
+        width: 100%;
+    }
+    .shortcut_box a div:nth-child(2){
+        font-size: 14px;
+        text-align: left;
+        position: absolute;
+        top: 0;
+        padding: 10px 0 0 10px;
+    }
+    .shortcut_box a>div:last-child{
+        font-size: 25px;
+        position: absolute;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        width: 190px;
+        top: 30%;
+        left: 50%;
+        margin-left: -95px;
+        text-shadow: 0 0 10px #000;
+    }
+    .about_bnt div:last-child div{
+        width: 140px;
+        margin: 0 auto;
+    }
+    .about_bnt div:last-child div p{
+        float: left;
+    }
+    .bnt{
+        color: #3ba3ba;
+    }
+
+
+    /*-----[footer]*/
+    footer{
+        width: 100%;
+        height: ;
+        background-color: #404040;
+        color: white;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .footer_logo{
+        width: 116px;
+        height: 51px;
+        background-image: url(../../images/Logo.png);
+        background-position: top right;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    .address{
+        margin: 10px auto;
+    }
+    .box2{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .box2 p:first-child{
+        font-weight: bold;
+        color: #e86a53;
+    }
+}

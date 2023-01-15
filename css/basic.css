@@ -1,0 +1,232 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: black;}
+ul li{list-style: none;}
+@font-face{
+            /*@font-face는 선택자가 아님. 나중에 폰트패밀리에 사용할 수 있도록 업로드 선언.*/
+            font-family: "a반달곰";
+            src:url(font/a반달곰.eot) format('embeded-opentype'),
+                url(font/a반달곰.woff) format('woff');
+        }
+body,a,p,h1,h2,h3,h4,h5,h6{
+    font-family: sans-serif,"Arial";
+}
+body{
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    text-align: center;
+}
+
+/*-----[header]*/
+header{
+    width: 100%;
+    height: 145px;
+    position: fixed;
+    min-width: 1024px;
+    background-color: white;
+    z-index: 99;
+}
+.Logo_wrap{
+    overflow: hidden;
+    margin: 25px auto;
+    width: 253px;
+}
+.Logo_wrap div{
+    float: left;
+}
+.top_logo{
+    width: 116px;
+    height: 51px;
+    background-image: url(../images/Logo.png);
+}
+.top_text{
+    font-family: "a반달곰";
+    font-size: 24px;
+    color: #006cba;
+    width: 127px;
+    margin-top: 12px;
+}
+
+.depth01{
+    width: 100%;
+    height: 44px;
+    background-color: #3ba3ba;
+}
+.depth01 ul{
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.depth01 ul li{
+    width: 125px;
+    height: 21px;
+    margin: 11px 65px;
+    float: left;
+}
+.depth01 ul li a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.depth02{
+    width: 100%;
+    height: 175px;
+    background-color: #404040;
+}
+.depth02_wrap{
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.depth02 ul{
+    width: 150px;
+    float: left;
+    margin-left: 95px;
+    margin-right: 10px;
+}
+.depth02 ul li{
+    text-align: left;
+    height: 31px;
+    margin: 10px 0;
+}
+.depth02 ul:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.depth02 ul li:hover{
+    border-bottom: 3px solid #e86a53;
+    box-sizing: border-box;
+}
+.depth02 ul li a{
+    display: block;
+    font-size: 14px;
+    color: white;
+    width: 150px;
+}
+
+
+/*-----[section]*/
+section{
+    padding-top: 145px;
+}
+.title{
+    width: 1024px;
+    margin: 50px auto;
+}
+.main_title{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 3px solid #3ba3ba;
+}
+.sub_title{
+    font-size: 12px;
+    color: #969696;
+    margin: 20px 0;
+}
+.article{
+    width: 1024px;
+    margin: 50px auto;
+}
+.round_image{
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+    border-radius: 20px;;
+}
+
+
+/*-----[footer]*/
+/*-----[footer]footer_nav*/
+.footer_nav{
+    width: 100%;
+    height: 220px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    border-top: 2px solid #3ba3ba;
+}
+.depth03 ul{
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.depth03 ul li{
+    width: 125px;
+    height: 21px;
+    margin: 11px 65px;
+    float: left;
+}
+.depth03 ul li a{
+    color: #3ba3ba;
+    font-size: 16px;
+    font-weight: bold;
+}
+.depth04{
+    width: 100%;
+    height: 175px;
+}
+.depth04_wrap{
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.depth04 ul{
+    width: 150px;
+    float: left;
+    margin-left: 95px;
+    margin-right: 10px;
+}
+.depth04 ul li{
+    text-align: left;
+    height: 31px;
+    margin: 10px 0;
+}
+.depth04 ul:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.depth04 ul li a{
+    font-size: 14px;
+    width: 150px;
+    font-weight: bold;
+}
+
+/*-----[footer]footer_wrap*/
+.footer_under{
+    width: 100%;
+    height: 100px;
+    background-color: #404040;
+    color: white;
+}
+.footer_wrap{
+    width: 1024px;
+    height: 100px;
+    margin: 0 auto;
+}
+.footer_wrap div{
+    float: left;
+    text-align: left;
+    font-size: 16px;
+}
+.footer_logo{
+    width: 116px;
+    height: 51px;
+    background-image: url(../images/Logo.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    margin-top: 24.5px;
+}
+.address{
+    margin: 29px 12px 0px 12px;
+}
+.box2{
+    margin: 18.5px 0 0 10px;
+}
+.box2 p:first-child{
+    font-weight: bold;
+    color: #e86a53;
+}

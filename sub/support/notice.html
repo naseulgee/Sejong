@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>세종어학원</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.depth02').hide();
+            $('.main_nav').click(function(){
+                $('.depth02').slideToggle();
+            });
+            
+            $('.surm').click(function(){
+                $(this).toggleClass('on');
+                $(this).children('.A').slideToggle();
+            });
+        })
+    </script>
+    <style>
+        .article>div{
+            margin: 10px auto;
+        }
+        
+        .surm{
+            width: 800px;
+            color: #969696;
+            background-color: #f2f2f2;
+            border-radius: 40px;
+            border: 2px solid #969696;
+            box-sizing: border-box;
+            text-align: left;
+            padding: 10px 40px;
+            cursor: pointer;
+        }
+        .surm:hover{
+            color: #3ba3ba;
+            border-color: #3ba3ba;
+        }
+        .on{
+            color: #3ba3ba;
+            border-color: #3ba3ba;
+        }
+        .A{
+            margin: 10px 20px;
+            padding: 10px 0;
+            color: #3ba3ba;
+            border-top: 3px dotted #3ba3ba;
+            display: none;
+        }
+        
+        @keyframes ani1{
+            0%{transform: rotate(0deg);}
+            50%{transform: rotate(180deg);}
+            100%{transform: rotate(360deg);}
+        }
+        .ing{
+            width: 800px;
+            height: 400px;
+            color: #969696;
+            font-size: 30px;
+            font-family: "a반달곰";
+            background-color: #f2f2f2;
+            border-radius: 40px;
+            border: 2px solid #969696;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .ing div:first-child{
+            position: absolute;
+            top: 182.5px;
+            left: 310.9px;
+            z-index: 1;
+            text-shadow: -3px 0 5px #fff, 0 3px 5px #fff, 3px 0 5px #fff, 0 -3px 5px #fff;
+        }
+        .ing div:nth-child(2){
+            width: 100px;
+            position: absolute;
+            top: 130px;
+            left: 220px;
+            animation: ani1 6s infinite linear;
+        }
+        .ing div:nth-child(3){
+            width: 150px;
+            position: absolute;
+            top: 180px;
+            left: 450px;
+            animation: ani1 8s infinite reverse linear;
+        }
+        .ing div:last-child{
+            width: 70px;
+            position: absolute;
+            top: 100px;
+            left: 450px;
+            animation: ani1 3s infinite linear;
+        }
+        .wheel img{
+            width: 100%;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+            <div class="Logo_wrap">
+                <a href="http://esejong.dothome.co.kr/">
+                    <div class="top_logo"></div>
+                    <div class="top_text">세종어학원</div>
+                </a>
+            </div>
+            <div class="main_nav">
+                <ul>
+                    <li class="depth01">
+                        <ul>
+                            <li><a href="#none">학원소개</a></li>
+                            <li><a href="#none">수강안내</a></li>
+                            <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
+                            <li><a href="#none">학습지원</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth02">
+                    <div class="depth02_wrap">
+                        <ul class="academy_intro">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
+                        </ul>
+                        <ul class="class_intro">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
+                        </ul>
+                        <ul class="help">
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
+                            <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
+                        </ul>
+                        </div></li>
+                </ul>
+            </div>
+    </header>
+    
+    <section>
+        <div class="title">
+            <div class="main_title">
+                Notice
+            </div>
+            <div class="sub_title">
+                공지사항
+            </div>
+        </div>
+        <div class="article">
+            <div class="ing">
+                <div>준비중입니다</div>
+                <div class="wheel"><img src="wheel.png" alt="톱니1"></div>
+                <div class="wheel"><img src="wheel.png" alt="톱니2"></div>
+                <div class="wheel"><img src="wheel.png" alt="톱니3"></div>
+            </div>
+            <!--
+            <div class="surm">
+                <h1>&#8226; 공지요약</h1>
+                <div class="A">
+                    내용
+                </div>
+            </div>
+-->
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_nav">
+            <ul>
+                <li class="depth03">
+                    <ul>
+                        <li><a href="#none">학원소개</a></li>
+                        <li><a href="#none">수강안내</a></li>
+                        <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
+                        <li><a href="#none">학습지원</a></li>
+                    </ul>
+                </li>
+                <li class="depth04">
+                <div class="depth04_wrap">
+                    <ul class="academy_intro">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
+                    </ul>
+                    <ul class="class_intro">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
+                    </ul>
+                    <ul class="help">
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
+                        <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
+                    </ul>
+                    </div></li>
+            </ul>
+        </div>
+        <div class="footer_under">
+            <div class="footer_wrap">
+                <div class="footer_logo"></div>
+                <div class="address">
+                    Address : #27 Ascona St. village east Cainta Rizal  |  Tel : 070-8258-6747<br>
+                    Copyright (c) 2016 Hoito-Turve All Rights Reserved.
+                </div>
+                <div class="box2">
+                    <p>Account Info</p>
+                    <p>예금주 : 이은숙<br>씨티 120-06097-260-01</p>
+                </div>
+                <div class="box2">
+                    <p>Contact</p>
+                    <p>KAKAO ID : oainee9898<br>SKYPE ID : sejong0710</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

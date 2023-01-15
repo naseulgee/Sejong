@@ -1,0 +1,54 @@
+.article div{
+    overflow: hidden;
+    margin: 10px 0;
+}
+.article>div>div{
+    width: 210px;
+    float: left;
+    margin: 0 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.article>div:nth-child(2n+1){
+    width: 540px;
+    margin: 0 auto;
+}
+.article>div:nth-child(2n){
+    width: 810px;
+    margin: 0 auto;
+}
+.p_img{
+    width: 210px;
+    padding: 10px 0;
+    background-color: #d0d0d0;
+    border-radius: 20px;
+    position: relative;
+}
+.p_img.on{
+    background-color: #3ba3ba;
+    color: #fff;
+}
+.p_img:hover{
+    background-color: #3ba3ba;
+}
+.p_img img{
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+}
+.name{
+    font-family: "a반달곰";
+    font-size: 20px;
+    padding-top: 240px;
+}
+.p_img:hover .name{
+    color: #fff;
+}
+.profile{
+    text-align: left;
+    padding: 10px;
+    display: none;
+    color: #000;
+}

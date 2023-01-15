@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>세종어학원</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/m_basic.css">
+    <link rel="stylesheet" type="text/css" href="css/m_main.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            $('.main_Btn').click(function(){
+                $('.Btn_img').toggleClass('on');
+                $('.main_nav').toggleClass('on');
+            });
+            $('.depth01>li').click(function(){
+                $(this).children('.depth02').slideToggle();
+            })
+            
+            $('.notice_right>ul.bxslider').bxSlider({
+                auto: true,
+                mode: 'vertical',
+                pager: false,
+            });
+            $('.banner>ul.bxslider').bxSlider({
+                auto: true,
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+            <div class="top_logo"></div>
+            <div class="main_Btn">
+                <div class="Btn_img"></div>
+            </div>
+            <div class="main_nav">
+                <ul class="depth01">
+                    <li><a href="#none">학원소개</a>
+                        <ul class="depth02">
+                            <li><a href="#">학원 소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">선교하는 학원</a></li>
+                            <li><a href="#">교사 소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#none">수강안내</a>
+                        <ul class="depth02">
+                            <li><a href="#">레벨별 신청 가능 과정</a></li>
+                            <li><a href="#">과정안내</a></li>
+                            <li><a href="#">수강신청 및 절차</a></li>
+                            <li><a href="#">수강료 및 환불 규정</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
+                    <li><a href="#none">학습지원</a>
+                        <ul class="depth02">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">프로그램 설치</a></li>
+                            <li><a href="#">교재 안내</a></li>
+                            <li><a href="#">문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    
+    <section>
+        <div class="banner">
+            <ul class="bxslider">
+                <li><img src="../images/banner/01.png" alt="01"></li>
+                <li><img src="../images/banner/02.png" alt="02"></li>
+                <li><img src="../images/banner/03.png" alt="03"></li>
+                <li><img src="../images/banner/04.png" alt="04"></li>
+            </ul>
+        </div>
+        <div class="shortcut_icon">
+            <div class="payment">
+                <a href="#" class="icon_wrap">
+                    <div class="image01"></div>
+                    <p>수강료 알아보기</p>
+                    <p>수강료를 미리 알아볼 수 있습니다</p>
+                </a>
+            </div>
+            <div class="enroll">
+                <a href="#" class="icon_wrap">
+                    <div class="image02"></div>
+                    <p>수강 신청하기</p>
+                    <p>간편하게 수강신청을 할 수 있습니다</p>
+                </a>
+            </div>
+            <div class="download">
+                <a href="#" class="icon_wrap">
+                    <div class="image03"></div>
+                    <p>프로그램 설치하기</p>
+                    <p>쉽게 강의 프로그램을 설치할 수 있습니다</p>
+                </a>
+            </div>
+            <div class="ask">
+                <a href="#" class="icon_wrap">
+                    <div class="image04"></div>
+                    <p>온라인 문의하기</p>
+                    <p>궁금한 점은 무엇이든 물어보세요</p>
+                </a>
+            </div>
+        </div>
+        <div class="notice">
+            <div class="notice_left">
+                <a href="#">공지사항</a>
+            </div>
+            <div class="notice_right">
+                <ul class="bxslider">
+                    <li><a href="#">공지사항1</a></li>
+                    <li><a href="#">공지사항2</a></li>
+                    <li><a href="#">공지사항3</a></li>
+                    <li><a href="#">공지사항4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="shortcut_box">
+            <a href="#" class="about_sejong">
+                <img src="../images/01.png" alt="sejong">
+                <div>학원 안내  Academy Info</div>
+                <div>About<br>SEJONG</div>
+            </a>
+            <a href="#" class="about_teachers">
+                <img src="../images/teachers_ai.png" alt="teacher">
+                <div>선생님 소개  Teachers</div>
+                <div>Teacher's<br>Profiles</div>
+            </a>
+            <a href="#" class="about_bnt">
+                <img src="../images/02.png" alt="church">
+                <div>선교하는 학원  Church Info</div>
+                <div>About
+                    <div><p class="bnt">BNT&nbsp;</p><p>Church</p></div>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_logo"></div>
+        <div class="address">
+            Address : #8 Ascona St. village east Cainta Rizal<br>Tel : 070-8258-6747<br>
+            Copyright (c) 2016 Hoito-Turve All Rights Reserved.
+        </div>
+        <div class="box2">
+            <p>Account Info</p>
+            <p>예금주 : 이은숙<br>씨티 120-06097-260-01</p>
+        </div>
+        <div class="box2">
+            <p>Contact</p>
+            <p>KAKAO ID : oainee9898<br>SKYPE ID : sejong0710</p>
+        </div>
+    </footer>
+</body>
+
+</html>
