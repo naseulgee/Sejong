@@ -1,0 +1,32 @@
+.article div{
+    margin: 40px auto;
+}
+
+.Btn{
+    overflow: hidden;
+    width: 720px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.Btn a{
+    display: block;
+    width: 300px;
+    height: 70px;
+    border-radius: 100px;
+    float: left;
+    margin: 0 30px;
+    background-color: #8bc6d3;
+    color: white;
+    font-family: "a반달곰";
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s;
+}
+.Btn a:hover{
+    font-size: 24px;
+    background-color: #3ba3ba;
+}

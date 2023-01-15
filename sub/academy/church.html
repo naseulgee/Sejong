@@ -2,56 +2,27 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--인코딩 설정-->
+    <meta name="content-language" content="kr"><!--기록된 언어-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie를 최신 코드로 적용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><!--화면 배율-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>세종어학원</title>
+    <!-- 캐쉬 파기 시간: 캐쉬가 쌓이지 않고 매번 새로운 페이지 로딩 세팅 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/> 
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
     <link rel="stylesheet" type="text/css" href="../../css/basic.css">
     <link rel="stylesheet" type="text/css" href="../../css/church.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../../js/common.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="Logo_wrap">
-            <a href="../../index.html">
-                <div class="top_logo"></div>
-                <div class="top_text">세종어학원</div>
-            </a>
-        </div>
-        <div class="main_nav">
-            <ul>
-                <li class="depth01">
-                    <ul>
-                        <li><a href="#none">학원소개</a></li>
-                        <li><a href="#none">수강안내</a></li>
-                        <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
-                        <li><a href="#none">학습지원</a></li>
-                    </ul>
-                </li>
-                <li class="depth02">
-                    <div class="depth02_wrap">
-                        <ul class="academy_intro">
-                            <li><a href="../../sub/academy/intro.html">학원 소개</a></li>
-                            <li><a href="../../sub/academy/hello.html">인사말</a></li>
-                            <li><a href="../../sub/academy/church.html">선교하는 학원</a></li>
-                            <li><a href="../../sub/academy/teachers.html">교사 소개</a></li>
-                        </ul>
-                        <ul class="class_intro">
-                            <li><a href="../../sub/class/intro.html">레벨별 신청 가능 수업</a></li>
-                            <li><a href="../../sub/class/enroll.html">수강신청 및 절차</a></li>
-                            <li><a href="../../sub/class/tuition.html">수강료 및 환불 규정</a></li>
-                        </ul>
-                        <ul class="help">
-                            <li><a href="../../sub/support/notice.html">공지사항</a></li>
-                            <li><a href="../../sub/support/download.html">프로그램 설치</a></li>
-                            <li><a href="../../sub/support/books.html">교재 안내</a></li>
-                            <li><a href="../../sub/support/qna.html">문의</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <include data-href="../../include/header.html"></include>
     
     <section>
         <div class="title">
@@ -125,58 +96,7 @@
         </div>
     </section>
     
-    <footer>
-        <div class="footer_nav">
-            <ul>
-                <li class="depth03">
-                    <ul>
-                        <li><a href="#none">학원소개</a></li>
-                        <li><a href="#none">수강안내</a></li>
-                        <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
-                        <li><a href="#none">학습지원</a></li>
-                    </ul>
-                </li>
-                <li class="depth04">
-                    <div class="depth04_wrap">
-                        <ul class="academy_intro">
-                            <li><a href="../../sub/academy/intro.html">학원 소개</a></li>
-                            <li><a href="../../sub/academy/hello.html">인사말</a></li>
-                            <li><a href="../../sub/academy/church.html">선교하는 학원</a></li>
-                            <li><a href="../../sub/academy/teachers.html">교사 소개</a></li>
-                        </ul>
-                        <ul class="class_intro">
-                            <li><a href="../../sub/class/intro.html">레벨별 신청 가능 수업</a></li>
-                            <li><a href="../../sub/class/enroll.html">수강신청 및 절차</a></li>
-                            <li><a href="../../sub/class/tuition.html">수강료 및 환불 규정</a></li>
-                        </ul>
-                        <ul class="help">
-                            <li><a href="../../sub/support/notice.html">공지사항</a></li>
-                            <li><a href="../../sub/support/download.html">프로그램 설치</a></li>
-                            <li><a href="../../sub/support/books.html">교재 안내</a></li>
-                            <li><a href="../../sub/support/qna.html">문의</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_under">
-            <div class="footer_wrap">
-                <div class="footer_logo"></div>
-                <div class="address">
-                    Address : #27 Ascona St. village east Cainta Rizal  |  Tel : 070-8258-6747<br>
-                    Copyright (c) 2016 Hoito-Turve All Rights Reserved.
-                </div>
-                <div class="box2">
-                    <p>Account Info</p>
-                    <p>예금주 : 이은숙<br>씨티 120-06097-260-01</p>
-                </div>
-                <div class="box2">
-                    <p>Contact</p>
-                    <p>KAKAO ID : oainee9898<br>SKYPE ID : sejong0710</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <include data-href="../../include/footer.html"></include>
 </body>
 
 </html>

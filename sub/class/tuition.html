@@ -2,148 +2,27 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--인코딩 설정-->
+    <meta name="content-language" content="kr"><!--기록된 언어-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie를 최신 코드로 적용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><!--화면 배율-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>세종어학원</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
-    <link rel="stylesheet" href="jquery.bxslider.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../../../js/jquery.bxslider.js"></script>
-    <script>
-        $(function(){
-            $('.depth02').hide();
-            $('.main_nav').click(function(){
-                $('.depth02').slideToggle();
-            });
-            
-            $('.TB').click(function(){
-                var boxOffset = $('.Tuition').offset().top-150;
-                
-                $('html,body').animate({
-                    scrollTop:boxOffset
-                })
-            });
-            $('.DB').click(function(){
-                var boxOffset = $('.Discount').offset().top-150;
-                
-                $('html,body').animate({
-                    scrollTop:boxOffset
-                })
-            });
-            $('.SB').click(function(){
-                var boxOffset = $('.Supplementary').offset().top-150;
-                
-                $('html,body').animate({
-                    scrollTop:boxOffset
-                })
-            });
-            $('.RB').click(function(){
-                var boxOffset = $('.Refund').offset().top-150;
-                
-                $('html,body').animate({
-                    scrollTop:boxOffset
-                })
-            });
-            
-            $('.Photo>div>ul.bxslider').bxSlider({
-                auto: true,
-            });
-        })
-    </script>
-    <style>
-        .article div{
-            margin: 40px auto;
-        }
-        .Info_Btn{
-            overflow: hidden;
-            margin: 0 auto;
-            width: 560px;
-        }
-        .Info_Btn div{
-            width: 100px;
-            height: 30px;
-            font-size: 15px;
-            font-weight: bold;
-            color: #969696;
-            padding: 6px 0;
-            line-height: 15px;
-            background-color: #f2f2f2;
-            border: 1px solid #969696;
-            box-sizing: border-box;
-            cursor: pointer;
-            float: left;
-            margin: 0 20px;
-        }
-        .Info_Btn div:hover{
-            background-color: #969696;
-            color: #f2f2f2;
-        }
-        
-        table{
-            margin: 0 auto;
-        }
-        table td{
-            padding: 10px;
-        }
-        .time2 td:first-child,.class td:first-child{
-            border: 0;
-        }
-        table tr td:first-child{
-            background-color: rgba(0,0,0,0);
-            font-size: 18px;
-            font-weight: bold;
-            border-right: 10px double #3ba3ba;
-        }
-        .class td{
-            background-color: #3ba3ba;
-            border-radius: 10px 10px 0px 0px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff;
-        }
-    </style>
+    <!-- 캐쉬 파기 시간: 캐쉬가 쌓이지 않고 매번 새로운 페이지 로딩 세팅 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/> 
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../css/tuition.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
 </head>
 
 <body>
-    <header>
-            <div class="Logo_wrap">
-                <a href="http://esejong.dothome.co.kr/">
-                    <div class="top_logo"></div>
-                    <div class="top_text">세종어학원</div>
-                </a>
-            </div>
-            <div class="main_nav">
-                <ul>
-                    <li class="depth01">
-                        <ul>
-                            <li><a href="#none">학원소개</a></li>
-                            <li><a href="#none">수강안내</a></li>
-                            <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
-                            <li><a href="#none">학습지원</a></li>
-                        </ul>
-                    </li>
-                    <li class="depth02">
-                    <div class="depth02_wrap">
-                        <ul class="academy_intro">
-                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
-                        </ul>
-                        <ul class="class_intro">
-                            <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
-                        </ul>
-                        <ul class="help">
-                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
-                            <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
-                        </ul>
-                        </div></li>
-                </ul>
-            </div>
-    </header>
+    <include data-href="../../include/header.html"></include>
     
     <section>
         <div class="title">
@@ -157,10 +36,10 @@
         </div>
         <div class="article">
             <div class="Info_Btn">
-                <div class="TB">수강료</div>
-                <div class="DB">할인 조건</div>
-                <div class="SB">보충수업</div>
-                <div class="RB">환불규정</div>
+                <div class="sub_btn_move" data-scroll="Tuition">수강료</div>
+                <div class="sub_btn_move" data-scroll="Discount">할인 조건</div>
+                <div class="sub_btn_move" data-scroll="Supplementary">보충수업</div>
+                <div class="sub_btn_move" data-scroll="Refund">환불규정</div>
             </div>
             <div class="Tuition">
                 <h1><font color="#3ba3ba">수강료</font></h1>
@@ -248,57 +127,7 @@
         </div>
     </section>
     
-    <footer>
-        <div class="footer_nav">
-            <ul>
-                <li class="depth03">
-                    <ul>
-                        <li><a href="#none">학원소개</a></li>
-                        <li><a href="#none">수강안내</a></li>
-                        <li><a href="http://cafe.naver.com/philsejong">커뮤니티</a></li>
-                        <li><a href="#none">학습지원</a></li>
-                    </ul>
-                </li>
-                <li class="depth04">
-                <div class="depth04_wrap">
-                    <ul class="academy_intro">
-                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Intro">학원 소개</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Hello">인사말</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Church">선교하는 학원</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Academy/Teachers">교사 소개</a></li>
-                    </ul>
-                    <ul class="class_intro">
-                        <li><a href="http://esejong.dothome.co.kr/sub/Class/Intro">레벨별 신청 가능 수업</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Class/enroll">수강신청 및 절차</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Class/tuition">수강료 및 환불 규정</a></li>
-                    </ul>
-                    <ul class="help">
-                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Notice">공지사항</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Download">프로그램 설치</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Support/Books">교재 안내</a></li>
-                        <li><a href="http://esejong.dothome.co.kr/sub/Support/QnA">문의</a></li>
-                    </ul>
-                    </div></li>
-            </ul>
-        </div>
-        <div class="footer_under">
-            <div class="footer_wrap">
-                <div class="footer_logo"></div>
-                <div class="address">
-                    Address : #27 Ascona St. village east Cainta Rizal  |  Tel : 070-8258-6747<br>
-                    Copyright (c) 2016 Hoito-Turve All Rights Reserved.
-                </div>
-                <div class="box2">
-                    <p>Account Info</p>
-                    <p>예금주 : 이은숙<br>씨티 120-06097-260-01</p>
-                </div>
-                <div class="box2">
-                    <p>Contact</p>
-                    <p>KAKAO ID : oainee9898<br>SKYPE ID : sejong0710</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <include data-href="../../include/footer.html"></include>
 </body>
 
 </html>
