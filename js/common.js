@@ -17,6 +17,12 @@ function LoadIncludeFile() {
 $(function(){
 	LoadIncludeFile();
 
+	if($(".include").length > 0 && $("body").hasClass("main")){
+		$(".include a").each(function(){
+			$(this).attr("href",$(this).attr("href").replace("../../","./"));
+		});
+	}
+
 	$('.depth02').hide();
 	$('.main_nav').click(function(){
 		$('.depth02').slideToggle();
