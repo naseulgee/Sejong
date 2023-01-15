@@ -1,12 +1,14 @@
+@charset "utf-8";
+
 *{margin: 0; padding: 0;}
 a{text-decoration: none; color: black;}
 ul li{list-style: none;}
-@font-face{
-            /*@font-face는 선택자가 아님. 나중에 폰트패밀리에 사용할 수 있도록 업로드 선언.*/
-            font-family: "a반달곰";
-            src:url(font/a반달곰.eot) format('embeded-opentype'),
-                url(font/a반달곰.woff) format('woff');
-        }
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 body,a,p,h1,h2,h3,h4,h5,h6{
     font-family: sans-serif,"Arial";
 }
@@ -40,7 +42,7 @@ header{
     background-image: url(../images/Logo.png);
 }
 .top_text{
-    font-family: "a반달곰";
+    font-family: "TTTtangsbudaejjigaeB";
     font-size: 24px;
     color: #006cba;
     width: 127px;
